@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Level/Level.gd" type="Script" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://Level/Floor.gd" type="Script" id=6]
 [ext_resource path="res://Level/Background.gd" type="Script" id=7]
 [ext_resource path="res://Level/Spritesground.gd" type="Script" id=8]
+[ext_resource path="res://audios/efeitosonoros/jumping.wav" type="AudioStream" id=9]
+[ext_resource path="res://audios/musicagame/gmaefase1.wav" type="AudioStream" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 650.291, 22.5182 )
@@ -16,6 +18,7 @@ extents = Vector2( 650.291, 22.5182 )
 script = ExtResource( 2 )
 
 [node name="Background" type="Sprite" parent="."]
+position = Vector2( 0, -2 )
 scale = Vector2( 1.6, 1.406 )
 texture = ExtResource( 4 )
 centered = false
@@ -47,6 +50,10 @@ position = Vector2( 205.905, 422.184 )
 scale = Vector2( 1.5, 1.5 )
 collision_mask = 2
 
+[node name="pulinho" type="AudioStreamPlayer2D" parent="Player"]
+stream = ExtResource( 9 )
+area_mask = 5
+
 [node name="Floor" type="StaticBody2D" parent="."]
 position = Vector2( 222.556, 535.739 )
 collision_layer = 2
@@ -54,7 +61,7 @@ collision_mask = 2
 script = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
-position = Vector2( 413.479, -18.7941 )
+position = Vector2( 445.479, -12.7941 )
 shape = SubResource( 1 )
 
 [node name="Tentacle" parent="." groups=[
@@ -67,5 +74,11 @@ collision_mask = 2
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
 autostart = true
+
+[node name="musica" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 10 )
+autoplay = true
+attenuation = 0.554785
+area_mask = 0
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
