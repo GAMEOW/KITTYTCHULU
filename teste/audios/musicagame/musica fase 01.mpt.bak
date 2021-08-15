@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE lmms-project>
+<lmms-project creator="LMMS" type="song" version="1.0" creatorversion="1.2.2">
+  <head timesig_numerator="4" bpm="140" timesig_denominator="4" masterpitch="0" mastervol="100"/>
+  <song>
+    <trackcontainer y="-6" width="600" height="300" type="song" minimized="0" visible="1" x="1" maximized="1">
+      <track name="Sample track" type="2" muted="0" solo="0">
+        <sampletrack vol="100" pan="0">
+          <fxchain enabled="0" numofeffects="0"/>
+        </sampletrack>
+        <sampletco sample_rate="44100" len="24132" pos="0" muted="0" src="/home/antonio/Documentos/lmms/projects/554496__itherealgooglekatclaire__mars-is-haunted.wav"/>
+      </track>
+    </trackcontainer>
+    <track name="Automation track" type="6" muted="0" solo="0">
+      <automationtrack/>
+      <automationpattern name="Numerator" mute="0" tens="1" prog="0" len="192" pos="0"/>
+      <automationpattern name="Denominator" mute="0" tens="1" prog="0" len="192" pos="0"/>
+      <automationpattern name="Tempo" mute="0" tens="1" prog="0" len="192" pos="0"/>
+      <automationpattern name="Master volume" mute="0" tens="1" prog="0" len="192" pos="0"/>
+      <automationpattern name="Master pitch" mute="0" tens="1" prog="0" len="192" pos="0"/>
+    </track>
+    <fxmixer y="310" width="543" height="333" minimized="0" visible="1" x="5" maximized="0">
+      <fxchannel num="0" name="Master" soloed="0" muted="0" volume="1">
+        <fxchain enabled="0" numofeffects="0"/>
+      </fxchannel>
+    </fxmixer>
+    <ControllerRackView y="310" width="350" height="200" minimized="0" visible="1" x="680" maximized="0"/>
+    <pianoroll y="5" width="860" height="480" minimized="0" visible="0" x="5" maximized="0"/>
+    <automationeditor y="1" width="860" height="362" minimized="0" visible="0" x="1" maximized="0"/>
+    <projectnotes y="10" width="729" height="400" minimized="0" visible="0" x="700" maximized="0"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;">
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p></body></html>]]></projectnotes>
+    <timeline lpstate="0" lp0pos="0" lp1pos="192"/>
+    <controllers/>
+  </song>
+</lmms-project>
